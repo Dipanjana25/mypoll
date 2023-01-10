@@ -14,15 +14,15 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.AlterModelOptions(
-            name='question',
-            options={'ordering': ['created_on']},
-        ),
         migrations.AddField(
             model_name='question',
             name='created_on',
             field=models.DateTimeField(auto_now_add=True, default=django.utils.timezone.now),
             preserve_default=False,
+        ),
+        migrations.AlterModelOptions(
+            name='question',
+            options={'ordering': ['created_on']},
         ),
         migrations.AddField(
             model_name='question',

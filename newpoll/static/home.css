@@ -1,6 +1,6 @@
 body{
     box-sizing: border-box;
-    background-color: #ede6e4;
+    background-color: #ffddd2;
 }
 .content{
     display: flex;
@@ -12,14 +12,14 @@ body{
     padding-top: 5vh;
 }
 .ques{
-    background-color: white;
+    background-color:#83c5be;
     border-radius: 5px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    width:40vw;
-    height:15vh;
-    margin-bottom: 2vh;
+    width:60vw;
+    height:45vh;
+    margin-bottom: 4vh;
 }
 .question-heading{
     font-family: 'Roboto Slab';
@@ -29,4 +29,50 @@ body{
 .button{
     display: flex;
     align-self: flex-end;
+    justify-content: space-between;
+    /* color:#1b4332; */
+}
+.button .vote-btn{
+    margin-left: 10px;
+    border-color: rgb(7, 97, 49);
+}
+.dis{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    /* display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auo; */
+}
+.card{
+    width:400px;
+    /* height:500px; */
+    /* size: 260px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+    /*background-size: cover;*/
+    margin:30px;
+    backdrop-filter:blur(10px);
+    opacity: 1.0;
+    /* color:#f87797; */
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-weight:bold;
+    height:120px;
+}
+.card:hover{
+    opacity:1.0;
+    background-color:#9f86c0;
+    border:60px;
+    text-shadow:none;
+    color:black;
+}
+.subh{
+    text-align: center;
+    font-size:larger;
+    margin-top:40px;
+    /* align-items: center; */
+}
+.qb{
+    font-size:larger;
 }

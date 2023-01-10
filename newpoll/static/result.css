@@ -1,6 +1,6 @@
 body{
     box-sizing: border-box;
-    background-color: #ede6e4;
+    background-color: #ffddd2;
 }
 .heading-main{
     width:50vw;
@@ -87,7 +87,7 @@ form{
     align-items: flex-start;
 }
 .prog{
-    background-color: rgb(243, 201, 16);
+    background-color: rgb(7, 97, 49);
     color:black
 }
 .wrapper{

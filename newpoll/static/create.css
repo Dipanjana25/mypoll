@@ -1,6 +1,6 @@
 body{
     box-sizing: border-box;
-    background-color: #ede6e4;
+    background-color: #ffddd2;
 }
 .heading-main{
     width:50vw;
@@ -59,7 +59,7 @@ form{
 .submit{
     margin-top: 5vh;
     margin-left: 3vw;
-    background-color: rgb(226, 106, 26) !important;
+    background-color: #7f4f24 !important;
     color:white;
 }
 .submit::hover{

@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('question', models.TextField()),
-                ('created_by', models.TextField()),
+                # ('created_by', models.TextField()),
             ],
         ),
         migrations.CreateModel(
@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('choice_text', models.TextField()),
-                ('count', models.IntegerField(default=0)),
+                ('votes', models.IntegerField(default=0)),
                 ('question', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='newpoll.question')),
             ],
         ),

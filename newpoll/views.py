@@ -103,18 +103,18 @@ def vote(request,pk):
 
 def result(request, pk):
     question = Question.objects.get(id=pk)
-    choice = Choice.objects.all().filter(question=question)
+    choices = Choice.objects.all().filter(question=question)
     choice_list = []
     total = 0
-    for cho in choice:
+    for cho in choices:
         total = total + cho.votes;
     if total==0:
         total = 1
-    for cho in choice:
+    for cho in choices:
         choice_list.append(
         {
-            "choice":choice,    
-            "percen":choice.votes/total * 100,
+            "choice":cho,    
+            "percen":int(cho.votes/total * 100),
         })
     context = {
         "question":question,
@@ -122,3 +122,8 @@ def result(request, pk):
     }
 
     return render(request,'result.html',context)
+
+def deletePoll(pk):
+    question = Question.objects.get(id=pk)
+    question.delete()
+    return redirect('/newpoll/home')
