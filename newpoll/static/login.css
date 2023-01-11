@@ -63,3 +63,57 @@ body{
 .buttons button{
     width:5vw;
 }
+.footer {
+    width: 100%;
+    color:black;
+    padding-bottom :0px;
+    margin-top: 69px;
+    font-weight: 500;
+  }
+  .footerlasr {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  p {
+    font-weight: bold;
+    color:black;
+  }
+  
+  #credits {
+    margin-top: 6.9px;
+  }
+  
+  
+  .footer-social-media {
+    font-size: 25px;
+  }
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    padding: 7px 0;
+    text-align: center;
+    border-radius: 50%;
+    color:black;
+    transition: all 0.2s ease-in;
+  }
+  .fa-facebook:hover {
+    color: rgb(20, 20, 231);
+  }
+  .fa-instagram:hover {
+    color: rgb(173, 10, 160);
+  }
+  .fa-twitter:hover {
+    color: rgb(47, 196, 255);
+  }
+  .fa-youtube:hover {
+    color: rgba(223, 16, 16, 0.904);
+  }
+  .fa-discord:hover{
+    color: rgb(142, 76, 187);
+  }
+.beech{
+    text-align:center;
+}

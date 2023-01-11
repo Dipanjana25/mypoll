@@ -123,7 +123,14 @@ def result(request, pk):
 
     return render(request,'result.html',context)
 
-def deletePoll(pk):
+def deletePoll(request,pk):
     question = Question.objects.get(id=pk)
     question.delete()
     return redirect('/newpoll/home')
+
+def sharePoll(request,pk):
+    question = Question.objects.get(id=pk)
+    context = {
+        "question":question,
+    }
+    return render(request,'share.html',context)

@@ -1,7 +1,7 @@
-function copyJoke() {
-    var copyText = document.getElementById("button.link").innerHTML;
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(copyText.value)
-    alert("Copied Text: " + "\n" + copyText.value);
-}
+function myFunction() {
+    var copyText = document.getElementById('haa').innerHTML;
+    // copyText.select();
+    // copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText);
+    alert(" Your link is ready to be shared!");
+  }
