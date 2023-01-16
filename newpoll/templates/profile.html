@@ -26,6 +26,8 @@
                     <a class="nav-link active p-2 m-2" aria-current="page" href="../create">Create</a>
                 </li>
             </ul>
+            <a href="../sharedpoll" ><i class="fa-solid fa-bell" style="color:white; margin-right:10px;"></i>
+            </a>
             <a href="/newpoll/logout" class="login-link">
                 <button class="btn btn-outline-light px-4 m-2">Logout</button>
             </a>
@@ -45,13 +47,21 @@
                     Vote
                 </button>
             </a>
-            <a href="../share/{{question.id}}" class="link">
+            <!-- <a href="../share/{{question.id}}" class="link">
             <button class="vote-btn btn btn-outline-success" >
                 Share
             </button>
-            </a>
+            </a> -->
+            <!-- <select type="submit" class="userSelect" class="form-select" id="share{{question.id}}" onchange="shareHandler('{{question.id}}')" name="share" aria-label="Default select example">
+                <option selected>Share To</option>
+                {% for user in users %}
+                    <option value="{{user.id}}">{{user.username}}</option>
+                {%endfor%}
+            </select> -->
             <a href="../delete/{{question.id}}" class="link">
-                <button type="button" class="btn btn-danger mx-1">Delete</button>
+                <button type="button" class="btn btn-danger mx-1">
+                    Delete
+                </button>
             </a>
         </div>
     </div>
